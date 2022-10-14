@@ -40,7 +40,7 @@ console.log(fruits); // [ 'apples', 'kiwis', 'mangoes', 'oranges', 'strawberries
 
 **・the case that start is a negative number**  
 &emsp;A negative number will be started from the end of the array to the beginning.  
-&emsp;-1 refers index[n], -2 refers index[n-1], -3 refers index[n-2], ...  
+&emsp;(-1 refers index[n], -2 refers index[n-1], -3 refers index[n-2], ...)  
 &emsp;In the code below, start position is -2 and deleteCount is 2 so the delete range will be the second from end to end.  
 ```JavaScript
 let fruits = ["apples", "bananas", "grapes", "oranges", "strawberries"];
@@ -57,7 +57,7 @@ This method can extract the elements from array without using in-place (not in-p
 
 
 **・the example using slice()**  
-&emsp;In the code below, the exraction range will be fruits[0] to fruits[2]. (the end position 3 is excluded)
+&emsp;In the code below, the exraction range will be fruits[0] to fruits[2]. (the end position 3 is excluded)  
 &emsp;slice() method is not in-place so origin of the array is not modified.
 ```JavaScript
 let fruits = ["apples", "bananas", "grapes", "oranges", "strawberries"];
@@ -67,7 +67,7 @@ console.log(fruits); // [ 'apples', 'bananas', 'grapes', 'oranges', 'strawberrie
 
 **・the case using a negative number**  
 &emsp;A negative number will be started from the end of the array to the beginning.  
-&emsp;-1 refers index[n], -2 refers index[n-1], -3 refers index[n-2], ...  
+&emsp;(-1 refers index[n], -2 refers index[n-1], -3 refers index[n-2], ...)  
 &emsp;In the code below, the exraction range will be fruits[3], which is the second element from end, to fruits[4]. (the end position 5 is excluded)
 ```JavaScript
 let fruits = ["apples", "bananas", "grapes", "oranges", "strawberries"];
@@ -75,5 +75,5 @@ console.log(fruits.slice(-2, 5)); // [ 'oranges', 'strawberries' ]
 ```
 
 ### references
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice  
