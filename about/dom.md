@@ -1,12 +1,13 @@
 # DOM
-Have you ever thought about how javascript works to HTML?  
-You can use Javascript to create and trigger events that makes some motion in web pages, however, Javascript cannot directly access HTML.  
-HTML can be manipulated only after the DOM, the data representation of the objects, is generated.
+Have you ever thought about how javascript works to HTML?　　
+You can use Javascript to create and trigger events that makes some motion in web pages; however, Javascript cannot directly access HTML.　　
+
+HTML can be manipulated only after the DOM, the data representation of the objects, is generated.　　
 
 ## What is DOM?
-DOM stands for Document Object Model and it is a programming interface for web documents.  
 DOM will represent documents in memory by nodes (objects) that enables programming languages to access pages, changing the document structure, style, and content.  
-All of the properties, methods, and events that manipulate and and create web pages are organized into objects. when the browser loads a web page, it will parse HTML and create the DOM tree, which is a hierarchical tree structure with a set of connected nodes.  
+All of the properties, methods, and events that manipulate and create web pages are organized into objects. When the browser loads a web page, it will parse HTML and create the DOM tree, which is a hierarchical tree structure with a set of connected nodes.  
+
 ```
 document 
   └── html 
@@ -26,7 +27,7 @@ When you want to make some motions in web pages through DOM, first of all, you n
     console.log(document.body); // body
 ```
 
-This navigation that the node tree using node relationships is called "DOM navigation". However, it is more pratical to get access to elements that have class or id. Use getElement or querySelector methods to achieve it.  
+This navigation of the node tree using node relationships is called "DOM navigation". However, it is more practical to get access to elements that have a class or id. Use getElement or querySelector methods to achieve it.  
 
 **・using getElement methods**  
 ```Javascript
